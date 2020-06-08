@@ -1,0 +1,48 @@
+/* CSS variables here */
+:root {
+  --card-border-color: #c9c9c9;
+  --blood-red: #FF073A;
+  --cold-blue: #057EFF;
+  --nice-green: #2AA846;
+}
+
+/* global styles */
+.container {
+  vertical-align: middle;
+}
+
+.container .row {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* card styles */
+.card {
+  padding: 20px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* card variants */
+.card.card--red {
+  border-bottom: 4px solid var(--blood-red);
+}
+
+.card.card--blue {
+
+  border-bottom: 4px solid var(--cold-blue);
+}
+
+.card.card--green {
+
+  border-bottom: 4px solid var(--nice-green);
+}
