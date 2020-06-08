@@ -17,7 +17,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 /* card styles */
@@ -45,4 +45,12 @@
 .card.card--green {
 
   border-bottom: 4px solid var(--nice-green);
+}
+
+/* footer styles */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
 }
