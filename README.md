@@ -1,2 +1,2 @@
-# covid-tracker-vanilla
-covid data tracker with vanilla js
+# covid-tracker-lite
+covid data tracker lite with vanilla js
