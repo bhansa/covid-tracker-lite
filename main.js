@@ -15,12 +15,15 @@
       .then((response) => response.json())
       .then((data) => {
         let summaryData = data.statewise[0];
-        document.getElementById(elementIds.confirmed).textContent =
-          summaryData.confirmed;
-        document.getElementById(elementIds.active).textContent =
-          summaryData.active;
-        document.getElementById(elementIds.recovered).textContent =
-          summaryData.recovered;
+        document.getElementById(elementIds.confirmed).textContent = Number(
+          summaryData.confirmed
+        ).toLocaleString("en-IN");
+        document.getElementById(elementIds.active).textContent = Number(
+          summaryData.active
+        ).toLocaleString("en-IN");
+        document.getElementById(elementIds.recovered).textContent = Number(
+          summaryData.recovered
+        ).toLocaleString("en-IN");
       })
       .catch((error) => console.log("api data fetch error", error));
   }
