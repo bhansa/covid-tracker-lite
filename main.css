@@ -89,6 +89,10 @@ input:checked+.slider:before {
   vertical-align: middle;
 }
 
+.container .strong {
+  border-bottom: 4px solid var(--font-color);
+}
+
 .container .row {
   display: flex;
   justify-items: center;
