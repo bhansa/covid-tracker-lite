@@ -15,7 +15,6 @@ function fetchData() {
     .then((response) => response.json())
     .then((data) => {
       let summaryData = data.statewise[0];
-      console.log(summaryData);
       document.getElementById(elementIds.confirmed).textContent =
         summaryData.confirmed;
       document.getElementById(elementIds.active).textContent =
