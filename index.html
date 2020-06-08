@@ -52,6 +52,12 @@
     </script>
   </head>
   <body>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        <em>Enable Dark Mode</em>
+      </label>
+    </div>
     <div class="container">
       <h1>
         Covid tracker, Data for
@@ -86,6 +92,7 @@
       </footer>
     </div>
     <script src="main.js" async></script>
+    <script src="theme-toggle.js" async defer></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js").then(function () {

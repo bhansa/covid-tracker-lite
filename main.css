@@ -1,12 +1,28 @@
 /* CSS variables here */
 :root {
-  --card-border-color: #c9c9c9;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --bg-color: #fff;
+  --font-color: #000;
+  --heading-color: #000;
   --blood-red: #FF073A;
   --cold-blue: #057EFF;
   --nice-green: #2AA846;
 }
 
+/* dark theme variables here */
+[data-theme="dark"] {
+  --bg-color: #000;
+  --font-color: #fff;
+}
+
 /* global styles */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
 .container {
   vertical-align: middle;
 }
@@ -18,6 +34,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: 80%;
+  background-color: var(--bg-color);
 }
 
 /* card styles */

@@ -27,6 +27,6 @@
       })
       .catch((error) => console.log("api data fetch error", error));
   }
-
-  fetchData();
+  // comment this method while developing to save api calls
+  // fetchData();
 })();
