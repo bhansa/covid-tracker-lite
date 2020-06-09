@@ -5,9 +5,13 @@
   --bg-color: #fff;
   --font-color: #000;
   --heading-color: #000;
+  --card-bg: #fff;
+
+  /* color variants */
   --blood-red: #FF073A;
   --cold-blue: #057EFF;
   --nice-green: #2AA846;
+
   /* slider */
   --slider-color: #ccc;
 }
@@ -16,6 +20,7 @@
 [data-theme="dark"] {
   --bg-color: #000;
   --font-color: #fff;
+  --card-bg: #333;
 }
 
 /* global styles */
@@ -109,6 +114,7 @@ input:checked+.slider:before {
   border: 1px solid var(--card-border-color);
   border-radius: 7px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--card-bg);
 }
 
 .card:hover {
