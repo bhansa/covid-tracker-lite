@@ -7,6 +7,7 @@ self.toolbox.precache([
   "/main.js",
   "/main.css",
   "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js",
 ]);
 
 self.toolbox.router.get("/(.*)", function (request, values, options) {
