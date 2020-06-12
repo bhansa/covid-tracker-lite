@@ -3,7 +3,7 @@ self.importScripts(
 );
 
 self.toolbox.precache([
-  "/index.html",
+  "/",
   "/main.js",
   "/main.css",
   "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
@@ -15,7 +15,7 @@ self.toolbox.router.get("/(.*)", function (request, values, options) {
       request.method === "GET" &&
       request.headers.get("accept").includes("text/html")
     ) {
-      return toolbox.cacheOnly(new Request("/index.html"), values, options);
+      return toolbox.cacheOnly(new Request("/"), values, options);
     }
     throw error;
   });
